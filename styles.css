@@ -27,7 +27,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    padding: 5px;
     /* background-image: linear-gradient(45deg, rgba(0, 0, 255, 0.322), rgba(255, 0, 0, 0.336)); */
     border-radius: 1rem;
     gap: 1rem;
@@ -48,17 +47,26 @@ main {
     flex-direction: column;
     height: 100%;
     flex-grow: 1;
+    flex-basis: 200px;
+
 }
 
 .row {
     display: flex;
     flex-grow: 1;
+    flex-basis: 200px;
+
     outline: 1px solid black;
     border-radius: 1px;
     justify-content: center;
     align-items: center;
     font-family: cursive;
     font-size: 6rem;
+    cursor: pointer;
+    user-select: none;
+}
+.row:hover {
+    background-color: rgba(250, 235, 215, 0.192);
 }
 
 .bottom-game {
